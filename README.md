@@ -18,7 +18,7 @@ Taip pat yra du failai:
 
 # MongoDB
 
-[Kaip įsirašyti galite peržiūrėti čia] (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
+[Kaip įsirašyti galite peržiūrėti čia](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
 Viską įrašę patį mongodb serverį galite paleisti nuėjus į įrašymo folderį ir paleidus mongod.exe failą.
 
 Jei kyla kokių klausimų, rašykite FB.
