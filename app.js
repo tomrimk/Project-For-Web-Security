@@ -2,8 +2,6 @@ var express    = require("express"),
     app        = express(),
     bodyParser = require("body-parser"),
     mongoose   = require("mongoose"),
-    Campground = require("./models/campground"),
-    Comment    = require("./models/comment"),
     flash      = require("connect-flash"),
     passport   = require("passport"),
     localStrategy = require("passport-local"),
@@ -15,14 +13,20 @@ var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
+var uri = "mongodb://heroku_10j8qznd:fojgmnk93jgthlt7sps927g4ev@ds235785.mlab.com:35785/heroku_10j8qznd";
+
 mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect(uri);
 app.use(bodyParser.urlencoded({extended: true}));
 mongoose.Promise = global.Promise;
+
+
+
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
-// seedDB(); //seed the database
+seedDB(); //seed the database
 
 app.locals.moment = require("moment");
 
