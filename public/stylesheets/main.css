@@ -1,15 +1,126 @@
+body {
+  background-image: url(../concrete-texture.png);
+}
+.jumbotron {
+  color: #083b66;
+  /* Full height */
+  height: 400px;
+  /* Center and scale the image nicely */
+  border-radius: 0 !important;
+}
+
+#backDiv {
+  background-image: url(http://travelobservers.com/wp-content/uploads/2016/07/La-Push-Washington.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  filter: grayscale(75%);
+}
+
+.jumbotron p {
+  color: white;
+}
+
+.col-md-4.col-sm-6 {
+  margin-top: 35px;
+}
+
 .thumbnail img {
-    width: 100%;
+  padding-top: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-header {
+  margin-left: 25px !important;
+}
+
+.btn {
+  border-radius: 0;
+  background: #083b66;
+  border-color: #083b66;
 }
 
 .thumbnail {
-    padding: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(../vintage-concrete.png);
+}
+.paveikslelis {
+  min-height: 300px;
+}
+
+.caption {
+  margin: 0;
+  padding: 0 !important;
 }
 
 .thumbnail .caption-full {
-    padding: 9px;
+  padding: 9px;
 }
 
 .deleteForm {
-    display: inline;
+  display: inline;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#pushedToRight {
+  margin-left: 50px;
+  z-index: 10;
+  position: absolute;
+  float: right;
+  margin-top: 25px;
+}
+
+/* logo color: 083b66*/
+.logo {
+  position: relative;
+  width: 100%;
+  z-index: 15;
+}
+
+.navi h3 {
+  display: inline;
+}
+
+.log {
+  background-clip: content-box;
+  display: inline;
+}
+
+.navi {
+  display: inline-block;
+  text-align: center;
+  color: #083b66;
+  font-size: 25px;
+}
+
+#blokas {
+  display: block;
+  position: absolute;
+  background: white;
+  z-index: 10;
+  height: 325px;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.contentImg {
+  width: 400px;
+  height: 400px;
 }

@@ -1,27 +1,35 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 
 var campgroundSchema = new mongoose.Schema({
-    name: String,
-    price: String,
-    image: String,
-    description: String,
-    createdAt: {
-        type: Date,
-        default: Date.now
+  name: String,
+  price: String,
+  image: String,
+  description: String,
+  address: String,
+  takesReservations: Boolean,
+  creditCards: Boolean,
+  wifi: Boolean,
+  tentsToRent: Boolean,
+  shops: String,
+  rating: Number,
+  ratingGivers: Number,
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  author: {
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
     },
-    author: {
-        id: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "User"
-        },
-        username: String
-    },
-    comments: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Comment"
-        }
-    ]
+    username: String
+  },
+  comments: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Comment'
+    }
+  ]
 });
 
-module.exports = mongoose.model("Campground", campgroundSchema);
+module.exports = mongoose.model('Campground', campgroundSchema);
