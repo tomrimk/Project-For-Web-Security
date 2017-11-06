@@ -16,8 +16,8 @@ var commentRoutes = require('./routes/comments'),
 var uri =
   'mongodb://heroku_10j8qznd:fojgmnk93jgthlt7sps927g4ev@ds235785.mlab.com:35785/heroku_10j8qznd';
 
-// mongoose.connect(uri); //for heroku
-mongoose.connect('mongodb://localhost/yelp_camp'); //for localhost
+mongoose.connect(uri); //for heroku
+// mongoose.connect('mongodb://localhost/yelp_camp'); //for localhost
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.Promise = global.Promise;
 
