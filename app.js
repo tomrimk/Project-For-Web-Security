@@ -13,10 +13,10 @@ var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
-var uri = "mongodb://heroku_10j8qznd:fojgmnk93jgthlt7sps927g4ev@ds235785.mlab.com:35785/heroku_10j8qznd";
+var uri = "mongodb://admin:admin@ds249355.mlab.com:49355/temp_db";
 
-mongoose.connect("mongodb://localhost/yelp_camp");
-// mongoose.connect(uri);
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect(uri);
 app.use(bodyParser.urlencoded({extended: true}));
 mongoose.Promise = global.Promise;
 

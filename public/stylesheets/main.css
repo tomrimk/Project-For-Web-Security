@@ -1,9 +1,46 @@
+body{
+    background-image: url(../concrete-texture.png);
+}
+.jumbotron{
+    background-image: url(https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-8/12961276_10157483559115206_6281236856611476491_o.jpg?oh=8db688116c82b503c66b6f1e787a0e1a&oe=5AAFEA5E);
+    background-size: cover;
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        /* Full height */
+        height: 100%; 
+        
+            /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.jumbotron p{
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    
+}
+
+.col-md-4.col-sm-6{
+    margin-top: 35px;
+}
+
 .thumbnail img {
-    width: 100%;
+    padding-top: 20px;
+    max-width: 400px;
+    max-height: 300px;
 }
 
 .thumbnail {
     padding: 0;
+    height: 100%;
+    background-image: url(../vintage-concrete.png);
+}
+.paveikslelis{
+    min-height: 300px;
+}
+
+.caption{
+    margin: 10px 20px;
 }
 
 .thumbnail .caption-full {
