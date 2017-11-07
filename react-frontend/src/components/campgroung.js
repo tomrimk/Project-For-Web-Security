@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../stylesheets/landing.css';
+import '../stylesheets/main.css';
 
 class Camp extends Component {
   render() {
