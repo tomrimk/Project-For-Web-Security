@@ -138,3 +138,9 @@ body {
 #extraInfo li {
   font-size: 24px;
 }
+
+.sumazintas {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
