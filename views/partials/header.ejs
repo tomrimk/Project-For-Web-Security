@@ -11,7 +11,13 @@
             <div class="col-md-12 navi center-block">
                 <h3>Apie mus</h3>
                 <a href="/campgrounds"><img src="/images/logo.png" class="log img-responsive"></a>
-                <a href="/login"><h3>Prisijungti</h3></a>
+                <% if(!currentUser){ %>
+                        <a href="/login"><h3>Prisijungti</h3></a>
+                    <% } else { %>
+                        <a href="#"><h3><%= currentUser.username %>,</h3></a>
+                        <a href="/logout"><h3>Atsijungti</h3></a>
+                    <% } %>
+                
             </div>
         </div>
     </div>

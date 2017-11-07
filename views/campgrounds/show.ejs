@@ -16,8 +16,11 @@
                     </div>
                     <div class="caption-full">                    
                         <p><%= campground.description %></p>
-                        <h4>Price: $<%= campground.price %>/night</h4>
-                        <p><em>Submitted By <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em></p>
+                        <div id="bottom">
+                            <h4>Price: $<%= campground.price %>/night</h4>
+                            <p><em>Submitted By <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em></p>
+                        </div>
+                        
                         <% if (currentUser && campground.author.id.equals(currentUser._id)){ %>
                             <a class="btn btn-warning" href="/campgrounds/<%= campground._id%>/edit">Edit</a>
                             <form class="deleteForm" action="/campgrounds/<%=campground._id%>?_method=DELETE" method="POST">
@@ -54,7 +57,16 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <p><%= campground.description%></p>
+                    <h2>Papildoma informacija:</h2>
+                    <ul id="extraInfo">
+                        <li>Parkingas: yra</li>
+                        <li>Wi-fi: nėra</li>
+                        <li>Elektra: nėra</li>
+                        <li>Nuomojamos palapinės: yra</li>
+                        <li>Parduotuvės šalia: Taip</li>
+                        <li>Leidžiami gyvūnai: Taip</li>
+                        <li>Kredito kortelės: Taip</li>
+                    </ul>
                 </div>
             </div>
             
